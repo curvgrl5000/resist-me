@@ -1,0 +1,252 @@
+//
+// Basic layout and styles for site
+//
+
+#wrapper { 
+  margin: 0 auto;
+  width: 612px;
+}
+
+#container {
+  display: block;
+  margin:0;
+  padding:0;
+  background-color:$background-color;
+  width: 612px;
+  height: 792px;
+}
+.details {
+  margin-bottom:5px;
+  padding:0px;
+  width: 500px;
+  height:130px;
+}
+.details-page {
+  margin-bottom:5px;
+  padding:0px;
+  width: 500px;
+  height:90px;
+}
+.details-left {
+  margin: 35px 0 0 25px;
+  padding:0px;
+  width: 70px;
+  height: 40px;
+  position: relative;
+  float: left;
+}
+.details-right {
+  margin: 35px 0 0 5px;
+  padding:0px;
+  width: 300px;
+  height: 40px;
+  position: relative;
+  float: left;
+}
+.cover-content {
+  margin: 0 0 0 25px;
+  padding: 10px 0px 0px 0px;
+  height: 360px;
+  width: 310px;
+  text-align: justify;
+}
+.page-content {
+  margin: 0 0 0 25px;
+  padding: 10px 0px 0px 0px;
+  height: 405px;
+  text-align: left;
+}
+.page-one {
+  background: white url("/images/page-one.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-two {
+  background: white url("/images/page-two.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-three {
+  background: white url("/images/page-three.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-four {
+  background: white url("/images/page-four.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-five {
+  background: white url("/images/page-five.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-six{
+  background: white url("/images/page-six.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+.page-seven{
+  background: white url("/images/page-seven.png") no-repeat 0 0;
+  width:100%;
+  height:792px;
+}
+
+#cover-header {
+  width: 612px;
+  height: 200px;
+  margin: 240px 0 0 0;
+  padding: 0;
+  position: relative;
+  background-color: $background-color;
+  float: left;
+}
+
+#header {
+  width: 612px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.logo {
+  background: transparent url("/images/resistor-logo.png") no-repeat 30px 20px;
+  position: absolute;
+  z-index: 20000;
+  background-size: 75%;
+  width: 130px;
+  height: 120px;
+}
+.cover-logo {
+  background: transparent url("/images/resistor-logo.png") no-repeat 30px 20px;
+  position: absolute;
+  z-index: 20000;
+  background-size: 75%;
+  width: 90px;
+  height: 90px;
+  margin-left: 70px;
+}
+.brand {
+  float: left;
+  display: block;
+  padding: 48px 0px 5px 135px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  color: white;
+  letter-spacing: .08em;
+  font-family: Helvetica, Arial;
+  width: 477px;
+}
+
+#header .address-band {
+  margin: 0 0 0 85px;
+  padding: 0 0 0 52px;
+  height: 20px;
+  width: 475px;
+  position: relative;
+  background-color: #BD6828;
+  float: left;
+}
+#cover-header .address-band {
+  margin: 0px;
+  padding: 0 0 0 182px;
+  height: 25px;
+  width: 430px;
+  position: relative;
+  background-color: #BD6828;
+  float: left;
+  padding-top: 6px;
+}
+.proposal-heading {
+  margin: 5%;
+  padding: 0px;
+  height: 94px;
+}
+.proposal-left {
+  width: 125px;
+  height: 125px;
+  @include border-radius;
+  border: 3px solid #CCC;
+}
+.proposal-right {
+  width: 400px;
+  height: 135px;
+  padding: 25px 0 0 0;
+}
+section[role=main] {
+  padding: 3%;
+  background-color: white;
+  height: 580px;
+  width: 500px;
+  margin: 0 0 0 76px;
+}
+.bottom-overlay {
+  background-color: #BD6828;
+  opacity: 0.65;
+    filter: alpha(opacity=70);
+    height: 332px;
+    float: left;
+  position: absolute;
+  width: 612px;
+  top: 461px;
+}
+.bottom-image {
+  background: white url("/images/page-three.png") no-repeat 0 0;
+  float: left;
+  width: 612px;
+  height: 353px;
+}
+
+footer {
+  padding: 15px 25px 0 0;
+  background-color: #BD6828;
+  width: 512px;
+  height: 72px;
+  margin: 0px;
+  a { @include basic-link; }
+  float: left;             
+}
+.accent {
+  background-color: #BD6828;
+  opacity:0.85;
+  filter:alpha(opacity=85); /* For IE8 and earlier */
+  width: 75px;
+  height: 87px;
+  position: relative;
+  float: left;             
+}
+.little-pkg, .little-pkg-2, .little-pkg-3 {
+  position: absolute;
+  z-index: 5000;
+  margin-left: 398px;
+}
+.little-pkg {
+  background: transparent url("/images/resistor-1.png") 0 0 no-repeat;
+  width: 116px;
+  height: 85px;
+  background-size: 74%;
+}
+.little-pkg-2 {
+  background: transparent url("/images/resistor-2.png") 0 0 no-repeat;
+  width: 100px;
+  height: 75px;
+  background-size: 91%;
+}
+.little-pkg-3 {
+  background: transparent url("/images/resistor-3.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: 80%;
+  margin-top: -10px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}

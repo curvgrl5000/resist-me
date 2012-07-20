@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <link rel="stylesheet" href="/stylesheets/screen.css">
+    
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div id="container" class="page-six">
+    
+      <!--start header-->
+        <div id="header">  
+          <div class="logo"></div>
+          <div class="brand">Resistor Software</div>
+          <div class="address-band">
+            <h2 class="tag">LOGIC <span class="white">DRIVEN</span> SOFTWARE</h2>
+          </div>                   
+        </div>
+
+          <%= yield %>
+
+        <div class="accent"></div>
+        <footer>
+            <h2 class="contact right">
+              <span class="white">PH:</span> 000 000 000<span class="white"> &nbsp; ADDRESS:</span> 123 MOCKINGBIRD LANE<br>
+              <span class="white">E:</span> INFO@RESISTORSOFTWARE.COM<span class="white"> &nbsp; WWW:</span><a href="/"> RESISTORSOFTWARE.COM</a>
+            </h2>
+        </footer>
+      </div> <!-- end container -->       
+    </div> <!-- end of wrapper -->       
+  </body> <!-- end of body -->      
+</html>            
