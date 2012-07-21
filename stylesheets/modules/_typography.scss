@@ -127,6 +127,20 @@
     line-height: 0.785 ;
     margin: 0.75em 0;
   }
+  h1.reviews {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2em ;
+    margin: 0.5em 0;
+    color: $orange-accent;     
+  }  
+  h1.paginator {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: .5em;
+    margin: 11px;
+    color: white;
+  }
   h1.client {
     font-size: 34px;
     line-height: 0.35;
@@ -153,6 +167,9 @@
     font-style: italic;
     letter-spacing: .2em;
   }
+  h2.tag a {
+    a { @include basic-link; }    
+  }
   h2.contact {
     font-weight: 600;
     font-size: 8.5px;
@@ -168,7 +185,7 @@
     font-weight: bold;
     font-size:10px;
     line-height: 0.835;
-    margin: 1.25em 0 0.5em;
+    margin: 0.5em 0 0.5em;
   }
   h4 {
     font-weight: bold;

@@ -6,7 +6,6 @@
   margin: 0 auto;
   width: 612px;
 }
-
 #container {
   display: block;
   margin:0;
@@ -46,15 +45,18 @@
 .cover-content {
   margin: 0 0 0 25px;
   padding: 10px 0px 0px 0px;
-  height: 360px;
+  max-height: 370px;
+  min-height: 370px;
   width: 310px;
   text-align: justify;
 }
 .page-content {
   margin: 0 0 0 25px;
   padding: 10px 0px 0px 0px;
-  height: 405px;
+  max-height: 420px;
+  min-height: 420px;
   text-align: left;
+  overflow: hidden;
 }
 .page-one {
   background: white url("/images/page-one.png") no-repeat 0 0;
@@ -91,7 +93,6 @@
   width:100%;
   height:792px;
 }
-
 #cover-header {
   width: 612px;
   height: 200px;
@@ -140,7 +141,6 @@
   font-family: Helvetica, Arial;
   width: 477px;
 }
-
 #header .address-band {
   margin: 0 0 0 85px;
   padding: 0 0 0 52px;
@@ -153,12 +153,20 @@
 #cover-header .address-band {
   margin: 0px;
   padding: 0 0 0 182px;
-  height: 25px;
+  height: 27px;
   width: 430px;
   position: relative;
   background-color: #BD6828;
   float: left;
   padding-top: 6px;
+}
+.pagination {
+  @include border-radius;
+  background-color: #9AB9B3;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  margin-left: 460px;
 }
 .proposal-heading {
   margin: 5%;
@@ -186,12 +194,12 @@ section[role=main] {
 .bottom-overlay {
   background-color: #BD6828;
   opacity: 0.65;
-    filter: alpha(opacity=70);
-    height: 332px;
+    filter: alpha(opacity=65);
+    height: 353px;
     float: left;
   position: absolute;
   width: 612px;
-  top: 461px;
+  top: 221px;
 }
 .bottom-image {
   background: white url("/images/page-three.png") no-repeat 0 0;
@@ -203,7 +211,7 @@ section[role=main] {
 footer {
   padding: 15px 25px 0 0;
   background-color: #BD6828;
-  width: 512px;
+  width: 513px;
   height: 72px;
   margin: 0px;
   a { @include basic-link; }
@@ -228,19 +236,21 @@ footer {
   width: 116px;
   height: 85px;
   background-size: 74%;
+  margin-top: -20px;
 }
 .little-pkg-2 {
   background: transparent url("/images/resistor-2.png") 0 0 no-repeat;
   width: 100px;
   height: 75px;
   background-size: 91%;
+  margin-top: -10px;
 }
 .little-pkg-3 {
   background: transparent url("/images/resistor-3.png") 0 0 no-repeat;
   width: 100px;
   height: 100px;
   background-size: 80%;
-  margin-top: -10px;
+  margin-top: -25px;
 }
 
 .right {

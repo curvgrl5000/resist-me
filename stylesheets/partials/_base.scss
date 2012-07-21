@@ -17,10 +17,11 @@ $fixed-line-height: $base-line-height;
 // Text Colors
 $text-color: #3A3F44;
 $loud-color: strengthen($text-color);
-$quiet-color: soften($text-color, 1.5);
+$quiet-color: soften($text-color, 2);
 $header-color: strengthen($text-color, 0.66);
 span.black { color: #222 }
 span.white { color: #fff }
+span.grey { color: $quiet-color } 
 $orange-accent: #EF8033; 
 
 // Link Colors

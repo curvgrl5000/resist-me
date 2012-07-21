@@ -7,6 +7,10 @@ span.white {
   color: #fff;
 }
 
+span.grey {
+  color: #9ea5ac;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,6 +65,18 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+a:link {
+  color: #3a3f44;
+  text-decoration: none;
+}
+a:visited {
+  color: #3a3f44;
+}
+a:hover {
+  color: #b7b6b6;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,6 +152,22 @@ h1 {
   margin: 0.75em 0;
 }
 
+h1.reviews {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  color: #ef8033;
+}
+
+h1.paginator {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: .5em;
+  margin: 11px;
+  color: white;
+}
+
 h1.client {
   font-size: 34px;
   line-height: 0.35;
@@ -167,6 +199,18 @@ h2.tag {
   letter-spacing: .2em;
 }
 
+h2.tag a a:link {
+  color: #3a3f44;
+  text-decoration: none;
+}
+h2.tag a a:visited {
+  color: #3a3f44;
+}
+h2.tag a a:hover {
+  color: #b7b6b6;
+  text-decoration: none;
+}
+
 h2.contact {
   font-weight: 600;
   font-size: 8.5px;
@@ -183,7 +227,7 @@ h3 {
   font-weight: bold;
   font-size: 10px;
   line-height: 0.835;
-  margin: 1.25em 0 0.5em;
+  margin: 0.5em 0 0.5em;
 }
 
 h4 {
@@ -505,7 +549,8 @@ body {
 .cover-content {
   margin: 0 0 0 25px;
   padding: 10px 0px 0px 0px;
-  height: 360px;
+  max-height: 370px;
+  min-height: 370px;
   width: 310px;
   text-align: justify;
 }
@@ -513,8 +558,10 @@ body {
 .page-content {
   margin: 0 0 0 25px;
   padding: 10px 0px 0px 0px;
-  height: 405px;
+  max-height: 420px;
+  min-height: 420px;
   text-align: left;
+  overflow: hidden;
 }
 
 .page-one {
@@ -623,12 +670,25 @@ body {
 #cover-header .address-band {
   margin: 0px;
   padding: 0 0 0 182px;
-  height: 25px;
+  height: 27px;
   width: 430px;
   position: relative;
   background-color: #BD6828;
   float: left;
   padding-top: 6px;
+}
+
+.pagination {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #9AB9B3;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  margin-left: 460px;
 }
 
 .proposal-heading {
@@ -665,12 +725,12 @@ section[role=main] {
 .bottom-overlay {
   background-color: #BD6828;
   opacity: 0.65;
-  filter: alpha(opacity=70);
-  height: 332px;
+  filter: alpha(opacity=65);
+  height: 353px;
   float: left;
   position: absolute;
   width: 612px;
-  top: 461px;
+  top: 221px;
 }
 
 .bottom-image {
@@ -683,7 +743,7 @@ section[role=main] {
 footer {
   padding: 15px 25px 0 0;
   background-color: #BD6828;
-  width: 512px;
+  width: 513px;
   height: 72px;
   margin: 0px;
   float: left;
@@ -722,6 +782,7 @@ footer a:hover {
   width: 116px;
   height: 85px;
   background-size: 74%;
+  margin-top: -20px;
 }
 
 .little-pkg-2 {
@@ -729,6 +790,7 @@ footer a:hover {
   width: 100px;
   height: 75px;
   background-size: 91%;
+  margin-top: -10px;
 }
 
 .little-pkg-3 {
@@ -736,7 +798,7 @@ footer a:hover {
   width: 100px;
   height: 100px;
   background-size: 80%;
-  margin-top: -10px;
+  margin-top: -25px;
 }
 
 .right {

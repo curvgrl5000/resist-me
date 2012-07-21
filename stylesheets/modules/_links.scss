@@ -13,3 +13,8 @@
     @if $decoration == "plain"     { text-decoration: none; }
   }
 }
+
+
+a {
+  @include basic-link;
+}
